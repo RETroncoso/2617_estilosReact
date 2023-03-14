@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import AppWrapper from "./components/AppWrapper/AppWrapper";
+import EjemploEnLinea from "./components/EjemploEnLinea/EjemploEnLinea";
+import EjemploModules from "./components/EjemploModules/EjemploModules";
+import EjemploObjeto from "./components/EjemploObjeto/EjemploObjeto";
+import EjemploStyled from "./components/EjemploStyled/EjemploStyled";
+import MaterialUI from "./components/MaterialUI/MaterialUI";
+import { GlobalStyles } from "./styles/GlobalStyles";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			{/* <AppWrapper>
+				<h1>HOLA</h1>
+				<EjemploEnLinea />
+				<EjemploObjeto />
+				<EjemploModules />
+				<EjemploStyled />
+			</AppWrapper> */}
+			<MaterialUI />
+			<GlobalStyles />
+		</>
+	);
 }
 
 export default App;
